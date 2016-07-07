@@ -65,6 +65,7 @@
 .container{
   display: flex;
   justify-content: center;
+
   .box {
     height: 310px;
     width: 310px;
@@ -73,14 +74,17 @@
     margin: 10px;
     padding: 0px 10px 0px 10px;
     border-radius: 5px;
+
     .news {
       color: black;
       border-bottom: 1px solid black;
     }
+
     .p {
       color: black;
     }
-    .specials {
+
+    .Specials {
       color: black;
       border-bottom: 1px solid black;
     }
@@ -91,6 +95,7 @@
       color: black;
       border-bottom: 1px solid black;
     }
+
     .img {
       border: 1px solid black;
     }
