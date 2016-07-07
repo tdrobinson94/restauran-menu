@@ -18,11 +18,16 @@
   justify-content: space-around;
   align-items: center;
   z-index: 1;
-  color: white;
+  color: black;
   .logo{
     width: 100px;
+    height: 85px;
+  }
+  .logo:hover{
+    border: 1px solid rgb(231,126,35);
   }
   .menu-tabs{
+    color: white;
     transition: color .2s ease-in-out;
   }
   .menu-tabs:hover{
@@ -36,6 +41,7 @@
     a{
       margin: 5px;
       font-size: 12px;
+      color: white;
       transition: color .3s ease-out;
     }
     a:hover{
