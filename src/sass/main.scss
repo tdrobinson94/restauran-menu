@@ -1,7 +1,7 @@
 @import url(http://weloveiconfonts.com/api/?family=brandico);
 
 .navbar-background{
-  background:rgba(0,0,0,0.6s);
+  background: rgba(0,0,0,0.6s);
   width: 100%;
   position: fixed;
   top: 0px;
@@ -20,21 +20,32 @@
   z-index: 1;
   color: white;
   .logo{
-
+    width: 100px;
   }
   .menu-tabs{
-
+    transition: color .2s ease-in-out;
+  }
+  .menu-tabs:hover{
+    color: rgb(231,126,35);
+    transition: color .2s ease-in-out;
   }
   .social-media{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    width: 100px;
     a{
       margin: 5px;
+      font-size: 12px;
+      transition: color .3s ease-out;
+    }
+    a:hover{
+      color: rgb(231,126,35);
+      transition: color .3s ease-out;
     }
   }
 }
 
-img{
+.header-image{
   width: 100%;
   max-height: 500px;
   display: flex;
@@ -45,82 +56,45 @@ img{
   font-family: 'brandico', sans-serif;
 }
 
-.box {
-  height: 310px;
-  width: 310px;
-  background-color: lightgray;
-  border: 1px solid black;
-}
-
-.news {
-  font-size: 20px;
-  color: black;
-  margin-top: -290px;
-  margin-left: 10px;
-  border-bottom: 1px solid black;
-  width: 275px;
-}
-
-.p {
-  width: 275px;
-  margin-left: 10px;
-}
-
-.box1 {
-  margin-top: -132px;
-  margin-left: 350px;
-  height: 310px;
-  width: 310px;
-  background-color: lightgray;
-  border: 1px solid black;
-
-}
-
-.Specials {
-  font-size: 20px;
-  color: black;
-  margin-top: -290px;
-  margin-left: 360px;
-  border-bottom: 1px solid black;
-  width: 275px;
-}
-
-.p1 {
-  width: 350px;
-  margin-left: 360px;
-}
-
-.box2 {
-  margin-top: -96px;
-  margin-left: 700px;
-  height: 310px;
-  width: 310px;
-  background-color: lightgray;
-  border: 1px solid black;
-
-}
-
-.location {
-  font-size: 20px;
-  color: black;
-  margin-top: -290px;
-  margin-left: 715px;
-  border-bottom: 1px solid black;
-  width: 275px;
-}
-
-.img {
-  margin-top: 30px;
-  margin-left: 750px;
-  border: 1px solid black;
-}
-
-.phone {
-  margin-top: 30px;
-  margin-left: 800px;
-}
-
-.address {
-  margin-top: 30px;
-  margin-left: 790px;
+.container{
+  display: flex;
+  justify-content: center;
+  .box {
+    height: 310px;
+    width: 310px;
+    background: rgb(190,195,199);
+    border: 1px solid black;
+    margin: 10px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 5px;
+    .news {
+      color: black;
+      border-bottom: 1px solid black;
+    }
+    .p {
+      color: black;
+    }
+    .specials {
+      color: black;
+      border-bottom: 1px solid black;
+    }
+    .p1 {
+      color: black;
+    }
+    .location {
+      color: black;
+      border-bottom: 1px solid black;
+    }
+    .img {
+      border: 1px solid black;
+    }
+    .phone {
+      color: black;
+      text-align: center;
+    }
+    .address {
+      color: black;
+      text-align: center;
+    }
+  }
 }
