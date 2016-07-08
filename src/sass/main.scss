@@ -115,16 +115,36 @@
   background-color: black;
   transition: background-color .3s linear;
 }
-
-.food-photos{
-  width: 210px;
+.containerOne{
+  width: 100%;
+  margin-top: 20px;
   display: flex;
-  flex-wrap: wrap;
-  .image-container{
-    margin: 5px;
-    .food{
-      height: 200px;
-      width: 200px;
+  justify-content: space-around;
+    .dropdown-tabs{
+      width: 70%;
+      .menu-title{
+        display: inline-block;
+        margin: 20px;
+      }
     }
-  }
+    .dropdown-content{
+      
+    }
+    .food-photos{
+      width: 210px;
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: none;
+      // border-left: 2px solid rgb(231,126,35);
+      h2{
+      }
+      .image-container{
+        .food{
+          border-radius: 10px;
+          height: 200px;
+          width: 200px;
+          margin-top: 10px;
+        }
+      }
+    }
 }
