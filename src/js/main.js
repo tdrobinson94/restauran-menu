@@ -9,7 +9,7 @@ var menuItems = function(){
     console.log(data);
     addToPage(data)
     $('.menu').click(function(){
-      $('.dropdown-content').html(`<div></div>`)
+      $('.dropdown-content').html(addToPage())
     })
     $('.reservations').on('click', function(){
       $('.dropdown-content').html(`
@@ -112,7 +112,7 @@ $(".logo").click(function(event) {
 $(".m").click(function(event) {
   event.preventDefault();
     $('html, body').animate({
-        scrollTop: 850
+        scrollTop: 780
     }, 1500);
     $('.dropdown-content').html(`
       <div>
@@ -128,7 +128,7 @@ $(".h").click(function(event) {
 $(".r").click(function(event) {
   event.preventDefault();
     $('html, body').animate({
-        scrollTop: 850
+        scrollTop: 780
     }, 1500);
     $('.dropdown-content').html(`
       <div class="reservations-container">
@@ -167,7 +167,7 @@ $(".r").click(function(event) {
 $(".s").click(function(event) {
   event.preventDefault();
     $('html, body').animate({
-        scrollTop: 850
+        scrollTop: 780
     }, 1500);
     $('.dropdown-content').html(`
       <div class="story-container">
@@ -235,7 +235,7 @@ var getFoodImages = function(){
       api_key: authKey,
       format: 'json',
       nojsoncallback: 1,
-      tags: 'sandwiches',
+      tags: 'pub food',
       sort: 'relevance',
       content_type: 1,
       per_page: 5
